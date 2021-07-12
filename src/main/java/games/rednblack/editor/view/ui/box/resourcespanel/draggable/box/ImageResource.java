@@ -27,8 +27,6 @@ import games.rednblack.editor.view.ui.box.UIResourcesBoxMediator;
 import games.rednblack.h2d.common.ResourcePayloadObject;
 
 public class ImageResource extends BoxItemResource {
-
-
     private final Image payloadImg;
     private final ResourcePayloadObject payload;
     
@@ -72,8 +70,8 @@ public class ImageResource extends BoxItemResource {
         }
 
         addActor(img);
-        
-        setClickEvent(UIResourcesBoxMediator.IMAGE_LEFT_CLICK, UIResourcesBoxMediator.IMAGE_RIGHT_CLICK, this, region.name);
+
+        setRightClickEvent(UIResourcesBoxMediator.IMAGE_RIGHT_CLICK, region.name);
 
         payloadImg = new Image(region);
         payload = new ResourcePayloadObject();
