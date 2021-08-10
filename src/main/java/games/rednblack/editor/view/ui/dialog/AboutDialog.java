@@ -11,8 +11,8 @@ import com.kotcrab.vis.ui.widget.VisTable;
 import games.rednblack.editor.HyperLap2DFacade;
 import games.rednblack.editor.proxy.SettingsManager;
 import games.rednblack.editor.utils.AppConfig;
-import games.rednblack.h2d.common.view.ui.StandardWidgetsFactory;
 import games.rednblack.h2d.common.H2DDialog;
+import games.rednblack.h2d.common.view.ui.StandardWidgetsFactory;
 import org.apache.commons.io.FileUtils;
 
 import java.io.File;
@@ -64,7 +64,7 @@ public class AboutDialog extends H2DDialog {
         contentTable.add("HyperLap2D is based on following libraries and open source tools:").left().padBottom(4).row();
         contentTable.add(new LinkLabel("- libGDX [https://github.com/libgdx/libgdx]", "https://github.com/libgdx/libgdx")).padLeft(6).left().row();
         contentTable.add(new LinkLabel("- Overlap2D [https://github.com/UnderwaterApps/overlap2d]", "https://github.com/UnderwaterApps/overlap2d")).padLeft(6).left().row();
-        contentTable.add(new LinkLabel("- Ashley [https://github.com/libgdx/ashley]", "https://github.com/libgdx/ashley")).padLeft(6).left().row();
+        contentTable.add(new LinkLabel("- Artemis-odb [https://github.com/junkdog/artemis-odb]", "https://github.com/junkdog/artemis-odb")).padLeft(6).left().row();
         contentTable.add(new LinkLabel("- Box2DLights [https://github.com/libgdx/box2dlights]", "https://github.com/libgdx/box2dlights")).padLeft(6).left().row();
         contentTable.add(new LinkLabel("- PureMVC Framework [https://github.com/PureMVC/puremvc-java-standard-framework]", "https://github.com/PureMVC/puremvc-java-standard-framework")).padLeft(6).left().row();
         contentTable.add(new LinkLabel("- VisUI [https://github.com/kotcrab/vis-ui]", "https://github.com/kotcrab/vis-ui")).padLeft(6).left().row();

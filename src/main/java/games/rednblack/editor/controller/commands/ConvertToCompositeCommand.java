@@ -19,17 +19,16 @@
 package games.rednblack.editor.controller.commands;
 
 import com.badlogic.gdx.math.Vector2;
-import games.rednblack.editor.utils.runtime.SandboxComponentRetriever;
-import games.rednblack.h2d.common.MsgAPI;
 import games.rednblack.editor.HyperLap2DFacade;
 import games.rednblack.editor.factory.ItemFactory;
 import games.rednblack.editor.renderer.components.DimensionsComponent;
 import games.rednblack.editor.renderer.components.TransformComponent;
 import games.rednblack.editor.renderer.components.ZIndexComponent;
-import games.rednblack.editor.renderer.utils.ComponentRetriever;
 import games.rednblack.editor.utils.runtime.EntityUtils;
+import games.rednblack.editor.utils.runtime.SandboxComponentRetriever;
 import games.rednblack.editor.view.ui.FollowersUIMediator;
 import games.rednblack.editor.view.ui.box.UILayerBoxMediator;
+import games.rednblack.h2d.common.MsgAPI;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -143,5 +142,7 @@ public class ConvertToCompositeCommand extends EntityModifyRevertibleCommand {
         HyperLap2DFacade.getInstance().sendNotification(DONE);
 
         sandbox.getSelector().setSelections(children, true);
+
+        facade.sendNotification(MsgAPI.DELETE_ITEMS_COMMAND_DONE);
     }
 }
